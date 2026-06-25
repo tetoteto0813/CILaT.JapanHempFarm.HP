@@ -1,0 +1,165 @@
+/* Engineer-themed extras for all non-top pages */
+:root{
+  /* Japan Hemp Farm palette — light, natural greens and browns */
+  --primary: #A9C94A; /* Leaf Green */
+  --secondary: #6B4B2A; /* Wood Brown */
+  --support: #59C3D8; /* Ocean / accent blue */
+  --bg: #F7F1E4; /* Main beige background */
+  --section-bg: #E9DCC6; /* Sand / section */
+  --surface: #F4F1E9; /* card surface */
+  --border: #CFC89A; /* warm taupe border */
+  --text: #4B3621; /* Dark brown text for readability */
+  --text-secondary: #6B4B2A; /* secondary text */
+  --muted: #9AA3AB; /* muted neutral */
+  --link: #2F5A5A; /* darker teal for links */
+  --link-hover: #1F4B3F;
+}
+
+/* Page wrapper */
+.engineerPage{
+  min-height:100vh;
+  background: linear-gradient(180deg, var(--bg), var(--section-bg));
+  color:var(--text);
+  font-family: Inter, 'Noto Sans JP', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* subtle diagonal grid overlay (engineer-y) */
+.engineerPage::before{
+  content:'';
+  position: absolute;
+  inset: -10% -20% auto -20%;
+  height: 140%;
+  background-image:
+    linear-gradient(135deg, rgba(47,58,67,0.03) 1px, transparent 1px),
+    linear-gradient(45deg, rgba(47,58,67,0.02) 1px, transparent 1px);
+  background-size: 60px 60px, 60px 60px;
+  transform: rotate(-2deg);
+  pointer-events:none;
+  mix-blend-mode: multiply;
+}
+
+/* animated conductor lines (engineer trick) */
+.engineerPage::after{
+  content:'';
+  position: absolute;
+  right: -10px;
+  top: 10%;
+  width: 8px;
+  height: 80%;
+  background: linear-gradient(180deg, rgba(56,86,102,0.0) 0%, rgba(56,86,102,0.06) 50%, rgba(56,86,102,0.0) 100%);
+  box-shadow: 0 0 60px rgba(56,86,102,0.02) inset;
+  animation: pulseLine 6s linear infinite;
+}
+
+@keyframes pulseLine{
+  0%{ transform: translateY(0); opacity:0.6 }
+  50%{ transform: translateY(-6%); opacity:0.95 }
+  100%{ transform: translateY(0); opacity:0.6 }
+}
+
+/* Header / logo */
+.engineerHeader{ width:100%; display:flex; flex-direction:column; align-items:center; margin-top:36px; margin-bottom:18px; user-select:none; position:relative; z-index:200; }
+.engineerLogo{ width:96px; height:auto; filter: drop-shadow(0 6px 22px rgba(0,0,0,0.12)); transition: transform .28s ease; }
+.engineerLogo:hover{ transform: rotate(-6deg) scale(1.06); }
+
+/* navigation */
+.engineerNav{ display:flex; flex-direction:column; align-items:center; gap:10px; margin-bottom:24px }
+.engineerNav a{ color:var(--link); text-decoration:none; font-weight:600; letter-spacing:0.02em; padding:6px 8px; border-radius:6px; transition: color .16s, background .16s, transform .12s }
+.engineerNav a.active{ font-weight:800; color:var(--primary); background: rgba(255,255,255,0.02); transform: translateX(4px); box-shadow: 0 8px 20px rgba(0,0,0,0.35) }
+.engineerNav a:hover{ color:var(--link-hover); transform: translateX(6px) }
+
+/* content card */
+.engineerCard{ 
+  position: relative;
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), var(--surface));
+  border-radius:14px; 
+  padding:36px 44px; 
+  max-width:980px; 
+  margin: 0 auto 36px; 
+  box-shadow: 0 8px 28px rgba(75,54,33,0.08);
+  border:1px solid rgba(75,54,33,0.06);
+  overflow: hidden;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* Soft blurred edge / halo to hide hard borders and create a frosted look */
+.engineerCard::before{
+  content: '';
+  position: absolute;
+  inset: -10px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(75,54,33,0.02));
+  filter: blur(8px);
+  opacity: 0.48;
+  z-index: 0;
+  pointer-events: none;
+}
+.engineerCard > *{ position: relative; z-index: 2; }
+.engineerTitle{ font-family: 'Playfair Display', Georgia, serif; font-size:2rem; margin:0 0 8px 0; color:var(--text); }
+.engineerSub{ color:var(--text-secondary); margin-bottom:18px }
+
+/* CTA */
+.cta{ display:inline-block; background:var(--primary); color: #fff; padding:10px 24px; border-radius:10px; font-weight:700; text-decoration:none }
+.cta.secondary{ background:var(--secondary); color:var(--text); }
+.cta:hover{ filter:brightness(.96); }
+
+/* Mail button — outlined, Playfair font, larger and elegant */
+.cta.mail{
+  background: transparent;
+  color: var(--text);
+  border: 2px solid rgba(75,54,33,0.12);
+  padding: 14px 36px;
+  border-radius: 14px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  box-shadow: 0 6px 18px rgba(75,54,33,0.06) inset;
+  text-decoration: none;
+}
+.cta.mail:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(75,54,33,0.08) inset, 0 6px 18px rgba(75,54,33,0.04);
+}
+
+/* interactive card detail: faux terminal header */
+.engineerCard .termHeader{ display:none; }
+.engineerCard .dot{ display:none }
+
+/* code-like accent lines */
+.codeAccent{ font-family: ui-monospace, SFMono-Regular, 'Roboto Mono', 'Noto Sans Mono', monospace; background: linear-gradient(90deg, rgba(47,58,67,0.03), transparent); padding:8px 12px; border-radius:8px; color:var(--text-secondary); }
+
+/* make images and cards slightly tilt on hover for crafted feel */
+.cardItem{ transition: transform .28s ease, box-shadow .28s ease }
+.cardItem:hover{ transform: translateY(-6px) rotate(-0.4deg); box-shadow: 0 28px 80px rgba(47,58,67,0.12) }
+
+@media (max-width:720px){ .engineerCard{ padding:20px; margin: 0 12px 28px } .engineerNav{ gap:6px } }
+
+@media (max-width:720px){
+  .philosophyPage{
+    min-height: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .philosophyPage::before,
+  .philosophyPage::after{
+    display: none;
+  }
+
+  .businessPage{
+    min-height: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .businessPage::before,
+  .businessPage::after{
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "about": "À propos",
+  "philosophy": "Philosophie",
+  "news": "Actualités",
+  "access": "Accès",
+  "faq": "FAQ",
+  "contact": "Contact",
+  "business": "Affaires",
+  "company_profile": "Profil de l'entreprise",
+  "company_name_label": "Nom de l'entreprise",
+  "company_name": "Sample Inc.",
+  "address_label": "Adresse",
+  "address": "1-2-3, XX Town, Miki, Hyogo, Japon",
+  "established_label": "Fondée",
+  "established": "1er avril 2020",
+  "representative_label": "Représentant",
+  "representative": "Rei Tominaga",
+  "capital_label": "Capital",
+  "capital": "10 millions JPY",
+  "back_home": "Retour à l'accueil"
+}

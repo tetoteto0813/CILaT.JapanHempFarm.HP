@@ -1,0 +1,19 @@
+{
+  "about": "公司简介",
+  "philosophy": "基本理念",
+  "business": "业务内容",
+  "contact": "联系我们",
+  "news": "新闻",
+  "access": "访问",
+  "faq": "常见问题",
+  "business_intro": "我們提供網站製作、應用開發、基礎設施建置以及農業相關解決方案──從規劃到營運的一站式支援。",
+  "service_web_title": "網站製作",
+  "service_web_desc": "響應式設計、CMS 整合、內容規劃與 SEO",
+  "service_app_title": "應用開發",
+  "service_app_desc": "iOS/Android 原生與混合應用，後端/API 實作",
+  "service_infra_title": "基礎設施",
+  "service_infra_desc": "雲端架構（AWS/GCP）、網路、CI/CD、監控與運維",
+  "service_agri_title": "農業相關解決方案",
+  "service_agri_desc": "IoT 感測器、精準農業、資料分析、現場驗證與運維支援",
+  "service_cta": "檢視案例 / 聯絡我們"
+}

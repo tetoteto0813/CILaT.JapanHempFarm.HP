@@ -1,0 +1,151 @@
+:root{
+	/* Mythic / Design-agency palette inspired by Botticelli's Birth of Venus */
+	/* Primary / CTA */
+	--primary: #B8745A; /* Shell Copper */
+	/* Secondary / Accent */
+	--secondary: #CCB47A; /* Champagne Gold */
+	/* Support (links) */
+	--support: #3F5E75; /* Sea Blue */
+
+	/* Light theme UI roles */
+	--bg: #F4F1E9; /* Pearl Ivory */
+	--section-bg: #E8E6E2; /* Sea Mist */
+	--surface: #DAD6CF; /* Foam Gray */
+	--border: #CFC6BB; /* Pale Taupe */
+	--text: #2F3A43; /* Ocean Slate */
+	--text-secondary: #66707A; /* Storm Gray */
+	--muted: #9AA3AB; /* Mist Gray */
+	--link: #3F5E75; /* Sea Blue */
+	--link-hover: #2D4B61; /* Deep Sea */
+
+	/* CTA specifics */
+	--cta-bg: #B8745A; /* Shell Copper */
+	--cta-bg-hover: #9D5F49; /* Burnt Shell */
+	--cta-text: #FFFFFF; /* Pearl White */
+	--cta-secondary-bg: #CCB47A; /* Champagne Gold */
+	--cta-secondary-hover: #B39A62; /* Aged Gold */
+	--cta-secondary-text: #2F3A43; /* Ocean Slate */
+
+	/* Status */
+	--success: #6FA39A; /* Tide Green */
+	--warning: #D7A089; /* Coral Blush */
+	--danger: #A45245; /* Deep Coral */
+
+	/* Shadows / accents */
+	--nav-shadow: #B8A995; /* Driftwood */
+
+	/* Dark theme fallbacks */
+	--dark-bg: #2E3740; /* Deep Abyss */
+	--dark-surface: #3A454F; /* Midnight Slate */
+	--dark-text: #F4F1E9; /* Pearl Ivory */
+	--dark-border: #66707A; /* Storm Gray */
+
+	/* Neutral scale N0..N9 */
+	--N0: #FFFFFF;
+	--N1: #F4F1E9; /* Pearl Ivory */
+	--N2: #E8E6E2; /* Sea Mist */
+	--N3: #DAD6CF; /* Foam Gray */
+	--N4: #CFC6BB; /* Pale Taupe */
+	--N5: #9AA3AB; /* Mist Gray */
+	--N6: #66707A; /* Storm Gray */
+	--N7: #2F3A43; /* Ocean Slate */
+	--N8: #3A454F; /* Midnight Slate */
+	--N9: #2E3740; /* Deep Abyss */
+
+	/* Gold and coral scales */
+	--gold-light: #E4C98A;
+	--gold-1: #CCB47A; /* Champagne Gold */
+	--gold-2: #B39A62; /* Aged Gold */
+	--gold-3: #8D7446; /* Antique Gold */
+
+	--coral-1: #D7A089; /* Coral Blush */
+	--coral-2: #B8745A; /* Shell Copper (primary) */
+	--coral-3: #9D5F49; /* Burnt Shell */
+	--coral-4: #A45245; /* Deep Coral */
+
+	--sea-light: #78A0BF;
+	--sea-1: #3F5E75; /* Sea Blue */
+	--sea-2: #2D4B61; /* Deep Sea */
+}
+
+html,body,#__next{height:100%;}
+
+body{
+	margin:0;
+	font-family: 'Noto Sans JP','Noto Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	color: var(--text);
+	background-color: var(--bg);
+	background-image: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0));
+	background-attachment: fixed;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	line-height:1.75;
+}
+
+/* Headings — use a refined serif feel for display */
+
+h1,h2,h3{ font-family: 'Playfair Display', 'Times New Roman', Georgia, serif; color:var(--text); letter-spacing:0.02em; margin:0 0 0.8rem 0; }
+
+/* Apply Home nav font to site navigation links for visual consistency */
+nav a,
+header a,
+.site-nav a {
+	font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Apply Playfair to engineer pages and major content areas when desired */
+.engineerPage,
+.container,
+.content,
+.engineerCard,
+.body,
+.engineerPage h1,.engineerPage h2,.engineerPage h3,
+.engineerPage p,.engineerPage li,.engineerPage table,.engineerPage th,.engineerPage td {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+a{ color:var(--link); text-decoration:none; position:relative; }
+a::after{ content:''; position:absolute; left:0; bottom:-3px; height:2px; width:0; background:linear-gradient(90deg,var(--secondary),var(--gold)); transition:width .22s ease; }
+a:hover::after{ width:100%; background:linear-gradient(90deg,var(--link-hover),var(--secondary)); }
+
+/* Decor — subtle marble frame and gold rule */
+.glass{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.04); backdrop-filter: blur(6px) saturate(120%); }
+.panel{ background: var(--surface); border-radius:14px; padding:28px; box-shadow: 0 18px 60px rgba(16,20,22,0.08); border: 1px solid var(--border); }
+
+/* gold accent line used near headings */
+.accent-rule{ height:6px; width:72px; background:linear-gradient(90deg,var(--secondary), var(--gold)); border-radius:3px; margin:12px 0 22px 0; box-shadow:0 6px 18px rgba(202,164,58,0.06); }
+
+.muted{ color:rgba(247,239,230,0.7); }
+
+code{ background: rgba(0,0,0,0.12); padding:0.06em 0.28em; border-radius:4px; }
+
+@media (max-width:640px){ body{ font-size:15px; } h1{ font-size:1.6rem; } }
+
+/* Fix mobile scrolling issues: background-attachment:fixed can break scrolling on iOS/Android browsers. */
+@media (max-width:720px) {
+	body { background-attachment: scroll; -webkit-overflow-scrolling: touch; }
+}
+
+/* TerminalFrame responsive tweaks */
+.terminal-frame { padding: 8px 12px; }
+.terminal-frame .tf-header { padding: 8px 10px; }
+.terminal-frame .tf-tabs { gap: 8px; }
+.terminal-frame .tf-tab { padding: 6px 10px; font-size: 0.95rem; white-space: nowrap; }
+.terminal-frame .tf-tab-active { font-weight: 700; }
+.terminal-frame .tf-body { padding: 16px; font-size: 0.95rem; }
+
+@media (max-width: 640px) {
+	.terminal-frame { max-width: 96%; }
+	.terminal-frame .tf-header { padding: 6px 8px; gap: 8px; }
+	.terminal-frame .tf-dots { margin-right: 6px; }
+	.terminal-frame .tf-tab { padding: 6px 8px; font-size: 0.88rem; }
+	.terminal-frame .tf-body { padding: 12px; font-size: 0.86rem; }
+	/* Make terminal body visually denser like desktop */
+	.terminal-frame .tf-body { border-radius: 8px; box-shadow: 0 8px 28px rgba(0,0,0,0.45); }
+}
+
+@media (min-width: 1200px) {
+	.terminal-frame .tf-body { font-size: 1rem; padding: 22px; }
+	.terminal-frame .tf-tab { font-size: 1rem; }
+}
+

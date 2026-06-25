@@ -1,0 +1,107 @@
+.container{
+  position: relative;
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg, #060606 0%, #0f0f0f 100%);
+  padding: 64px 20px;
+  color: #f5f5f5;
+}
+
+.content{
+  position: relative;
+  z-index: 2;
+  width: min(1080px, 95%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 14px;
+  padding: 48px 56px;
+  box-shadow: 0 28px 80px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* background image behind the text: place your image at public/philosophy-bg.png */
+.content::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background-image: url('/philosophy-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px) saturate(0.7);
+  opacity: 0.16;
+  transform: scale(1.04);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* subtle dark overlay to keep text readable */
+.content::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.18));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.title{
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.6rem, 2.6vw, 2.6rem);
+  margin: 0 0 18px 0;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.body{
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.95;
+  margin-top: 12px;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.body p{ margin: 0 0 1rem 0 }
+
+.silverRule{
+  height: 6px;
+  width: 60%;
+  margin: 36px auto 24px auto;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.95), rgba(255,255,255,0.08));
+  box-shadow: 0 0 36px rgba(220,220,220,0.08), 0 4px 18px rgba(0,0,0,0.6) inset;
+  position: relative;
+}
+
+@keyframes pulseSilver {
+  0% { box-shadow: 0 0 10px rgba(255,255,255,0.04), 0 0 0 rgba(255,255,255,0); }
+  50% { box-shadow: 0 0 28px rgba(255,255,255,0.12), 0 0 6px rgba(255,255,255,0.02) inset; }
+  100% { box-shadow: 0 0 10px rgba(255,255,255,0.04), 0 0 0 rgba(255,255,255,0); }
+}
+.silverRule{
+  animation: pulseSilver 3.6s ease-in-out infinite;
+}
+
+.signatureWrap{ text-align:center; margin-top:28px }
+.signature{ display:block; margin: 18px auto 0; width: min(420px, 36%); max-width: 100%; height: auto; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.6)); }
+
+@media (max-width:720px){
+  .content{ width: 100%; padding: 28px 18px; box-sizing: border-box; }
+  .silverRule{ width: 80%; margin: 28px auto }
+  .signatureWrap{ margin-top: 28px; padding-bottom: 56px; }
+  .signature{ width: min(320px, 72%) }
+}
+
+@media (max-width:720px) {
+  .container {
+    display: block;
+    min-height: auto;
+    padding: 24px 16px calc(96px + env(safe-area-inset-bottom));
+    overflow: visible;
+    box-sizing: border-box;
+  }
+}

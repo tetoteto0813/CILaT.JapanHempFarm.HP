@@ -1,0 +1,19 @@
+{
+  "about": "À propos de l'entreprise",
+  "philosophy": "Philosophie de base",
+  "business": "Contenu de l'entreprise",
+  "contact": "Nous contacter",
+  "news": "Nouvelles",
+  "access": "Accès",
+  "faq": "Questions fréquentes",
+  "business_intro": "Nous proposons des services couvrant la création de sites, le développement d'applications, l'infrastructure et des solutions liées à l'agriculture — accompagnement complet de la planification à l'exploitation.",
+  "service_web_title": "Création de sites",
+  "service_web_desc": "Design responsive, intégration CMS, stratégie de contenu et SEO",
+  "service_app_title": "Développement d'applications",
+  "service_app_desc": "Applications natives iOS/Android, hybrides, et implémentation backend/API",
+  "service_infra_title": "Infrastructure",
+  "service_infra_desc": "Architecture cloud (AWS/GCP), réseau, CI/CD, surveillance et exploitation",
+  "service_agri_title": "Solutions agricoles",
+  "service_agri_desc": "Capteurs IoT, agriculture de précision, analyse de données, vérification sur site et support opérationnel",
+  "service_cta": "Cas clients・お問い合わせ"
+}

@@ -1,0 +1,27 @@
+/* FAQ page — refined, mythic look */
+.button{
+	display:inline-block;
+	background: linear-gradient(90deg,var(--primary), var(--coral-3));
+	color: var(--cta-text);
+	border: none;
+	padding: 12px 22px;
+	border-radius: 12px;
+	font-weight:700;
+	letter-spacing:0.04em;
+	cursor:pointer;
+	box-shadow: 0 14px 40px rgba(46,55,64,0.18), inset 0 -2px 0 rgba(255,255,255,0.06);
+	transition: transform .18s ease, box-shadow .18s ease;
+}
+.button:hover{ transform: translateY(-4px); box-shadow:0 24px 60px rgba(46,55,64,0.22); background: linear-gradient(90deg,var(--coral-3), var(--primary)); }
+.button:active{ transform: translateY(-2px); }
+
+.ghost{ background:transparent; border:1px solid var(--gold-2); color:var(--text); padding:10px 18px; border-radius:10px; }
+
+/* FAQ panel overrides to look like a design agency card */
+.faqCard{ background: linear-gradient(180deg, rgba(255,255,255,0.02), var(--surface)); border-radius:14px; padding:40px; max-width:920px; margin:0 auto; box-shadow: 0 30px 80px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.04); }
+.faqTitle{ font-family: 'Playfair Display', Georgia, serif; font-size:2.0rem; margin-bottom:.6rem; color:var(--text); }
+.faqRule{ height:6px; width:88px; background: linear-gradient(90deg,var(--primary), var(--secondary)); border-radius:4px; margin-bottom:18px; }
+.faqQuestion{ font-weight:700; font-size:1.12rem; margin-bottom:6px; color:var(--text); }
+.faqAnswer{ white-space:pre-line; color:var(--text-secondary); line-height:1.85; }
+
+

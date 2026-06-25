@@ -1,0 +1,21 @@
+{
+  "name": "cilat-japanhemp-hp",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "i18next": "^25.4.0",
+    "next": "^15.3.4",
+    "next-i18next": "^15.4.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-i18next": "^15.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.7.2",
+    "@types/react": "19.2.14",
+    "typescript": "5.9.3"
+  }
+}
