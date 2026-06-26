@@ -6,9 +6,10 @@
   "faq": "常見問題",
   "contact": "聯絡我們",
   "business": "業務",
-  "news_title": "新闻",
-  "title": "新聞列表",
-  "empty": "暫無新聞",
+  "news_title": "最新消息",
+  "title": "最新消息列表",
+  "empty": "目前沒有最新消息",
   "home": "返回首頁",
-  "participants": "參與企業"
+  "participants": "參與企業",
+  "back_to_news": "返回最新消息列表"
 }

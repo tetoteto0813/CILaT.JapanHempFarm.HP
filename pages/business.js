@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/about', label: 'about' },
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
+  { href: '/news', label: 'news' },
   { href: '/business', label: 'business' },
   { href: '/participants', label: 'participants' },
 ];
@@ -56,20 +57,6 @@ export default function Business() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-
-            <div style={{ marginTop: 20 }}>
-              <Link href="/contact" locale={i18n.language} className={styles.contactBtn} aria-label={t('service_cta')}>
-                <img src="/contact-button.png" alt={t('service_cta')} />
-                <span className={styles.btnText}>
-                  {String(t('service_cta')).split('\n').map((line, idx) => (
-                    <span key={idx}>
-                      {line}
-                      {idx < String(t('service_cta')).split('\n').length - 1 ? <br /> : null}
-                    </span>
-                  ))}
-                </span>
-              </Link>
-            </div>
           </TerminalFrame>
         </div>
       </div>

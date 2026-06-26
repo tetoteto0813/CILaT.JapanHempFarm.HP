@@ -6,9 +6,10 @@
   "faq": "FAQ",
   "contact": "Contact",
   "business": "Affaires",
-  "news_title": "Nouvelles",
+  "news_title": "Actualités",
   "title": "Liste des actualités",
-  "empty": "Aucune actualité",
+  "empty": "Aucune actualité pour le moment",
   "home": "Retour à l'accueil",
-  "participants": "Entreprises participantes"
+  "participants": "Entreprises participantes",
+  "back_to_news": "Retour aux actualités"
 }

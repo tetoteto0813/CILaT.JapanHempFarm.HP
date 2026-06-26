@@ -8,7 +8,8 @@
   "business": "业务",
   "news_title": "新闻",
   "title": "新闻列表",
-  "empty": "没有新闻",
+  "empty": "暂无新闻",
   "home": "返回首页",
-  "participants": "参与企业"
+  "participants": "参与企业",
+  "back_to_news": "返回新闻列表"
 }

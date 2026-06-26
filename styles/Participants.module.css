@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, var(--bg), var(--section-bg));
+  background: transparent;
   color: var(--text);
   padding: 48px 20px calc(96px + env(safe-area-inset-bottom));
   box-sizing: border-box;

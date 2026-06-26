@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import TerminalFrame from '../components/TerminalFrame';
 
 
 const navLinks = [
   { href: '/about', label: 'about' },
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
+  { href: '/news', label: 'news' },
   { href: '/business', label: 'business' },
   { href: '/participants', label: 'participants' },
 ];
@@ -17,12 +17,11 @@ const navLinks = [
 export default function About() {
   const { t, i18n } = useTranslation('about');
   const router = useRouter();
-  const history = t('history', { returnObjects: true }) || [];
 
   return (
     <div className="engineerPage">
       <Head>
-        <title>{t('company_profile')}</title>
+        <title>{t('about')}</title>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
       </Head>
       {/* ナビゲーション */}
@@ -44,45 +43,11 @@ export default function About() {
           </Link>
         ))}
       </nav>
-      {/* 会社概要 */}
-      <TerminalFrame title={t('company_profile') || 'Company'}>
-        <div className="engineerCard">
-        <div className="termHeader"><span className="dot t1"/><span className="dot t2"/><span className="dot t3"/></div>
-        <h1 className="engineerTitle">{t('company_profile')}</h1>
-        <table style={{
-          width: '100%',
-          marginBottom: 32,
-          borderCollapse: 'separate',
-          borderSpacing: '0 8px'
-        }}>
-          <tbody>
-            <tr>
-              <th style={{ textAlign: 'left', color: '#ffffff', width: '38%', fontWeight: 'bold', fontSize: '1.08rem', paddingRight: 12 }}>{t('company_name_label')}</th>
-              <td style={{ fontSize: '1.08rem' }}>{t('company_name')}</td>
-            </tr>
-            <tr>
-              <th style={{ textAlign: 'left', color: '#ffffff', width: '38%', fontWeight: 'bold', fontSize: '1.08rem', paddingRight: 12 }}>{t('address_label')}</th>
-              <td style={{ fontSize: '1.08rem' }}>{t('address')}</td>
-            </tr>
-            <tr>
-              <th style={{ textAlign: 'left', color: '#ffffff', width: '38%', fontWeight: 'bold', fontSize: '1.08rem', paddingRight: 12 }}>{t('established_label')}</th>
-              <td style={{ fontSize: '1.08rem' }}>{t('established')}</td>
-            </tr>
-            <tr>
-              <th style={{ textAlign: 'left', color: '#ffffff', width: '38%', fontWeight: 'bold', fontSize: '1.08rem', paddingRight: 12 }}>{t('representative_label')}</th>
-              <td style={{ fontSize: '1.08rem' }}>{t('representative')}</td>
-            </tr>
-            <tr>
-              <th style={{ textAlign: 'left', color: '#ffffff', width: '38%', fontWeight: 'bold', fontSize: '1.08rem', paddingRight: 12 }}>{t('capital_label')}</th>
-              <td style={{ fontSize: '1.08rem' }}>{t('capital')}</td>
-            </tr>
-          </tbody>
-        </table>
-        <div style={{ marginBottom: 32 }}>
-        </div>
-          <Link href="/" locale={i18n.language} className="cta secondary" style={{ marginTop: 20, display: 'inline-block' }}>{t('back_home')}</Link>
-        </div>
-      </TerminalFrame>
+      {/* 農場概要 */}
+      <div className="engineerCard aboutFarmCard">
+        <img src="/IMG_0811.png" alt={t('about')} className="aboutFarmImage" />
+        <p className="aboutLocationNotice">{t('location_notice')}</p>
+      </div>
       <style jsx global>{`
 @keyframes fadeInNav {
   from {
@@ -116,6 +81,14 @@ export default function About() {
 .engineerPage table th { color: var(--text-secondary); }
 .engineerPage a.cta.secondary { background: transparent; border: 1px solid var(--primary); color: var(--primary); padding: 8px 14px; border-radius:6px; }
 .engineerPage .engineerTitle, .engineerPage .engineerCard, .engineerPage table, .engineerPage th, .engineerPage td { font-family: 'Playfair Display', Georgia, serif; }
+.aboutFarmCard { max-width: 920px; text-align: center; }
+.aboutFarmImage { display: block; width: min(100%, 760px); height: auto; margin: 0 auto; border-radius: 12px; box-shadow: 0 18px 54px rgba(75,54,33,0.14); }
+.aboutLocationNotice { width: min(100%, 760px); margin: 18px auto 0; color: var(--text-secondary); font-family: 'Playfair Display', Georgia, serif; font-size: 0.98rem; line-height: 1.8; text-align: left; }
+@media (max-width: 720px) {
+  .aboutFarmCard { margin: 0 16px 28px; padding: 24px 18px; }
+  .aboutFarmImage { border-radius: 10px; }
+  .aboutLocationNotice { font-size: 0.92rem; line-height: 1.7; }
+}
       `}</style>
     </div>
   );

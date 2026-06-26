@@ -10,6 +10,7 @@ const navLinks = [
   { href: '/about', label: 'about' },
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
+  { href: '/news', label: 'news' },
   { href: '/business', label: 'business' },
   { href: '/participants', label: 'participants' },
 ];
@@ -54,11 +55,8 @@ export default function Philosophy() {
             ))}
           </div>
 
-          <div className={styles.silverRule} aria-hidden="true" />
 
-          <div className={styles.signatureWrap}>
-            <img src="/reitominaga-cilat.png" alt="Signature" className={styles.signature} />
-          </div>
+
         </div>
       </div>
       {/* グローバルCSS */}
