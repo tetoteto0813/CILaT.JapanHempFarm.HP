@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
   { href: '/business', label: 'business' },
+  { href: '/participants', label: 'participants' },
 ];
 
 export default function About() {

@@ -1,5 +1,5 @@
 {
-  "about": "회사 소개",
+  "about": "농장 개요",
   "philosophy": "기본 철학",
   "business": "비즈니스 내용",
   "contact": "연락처",
@@ -7,5 +7,6 @@
   "access": "접근",
   "faq": "자주 묻는 질문",
   "news_title": "뉴스",
-  "contact_message": "문의 사항은 이메일로 연락 주시기 바랍니다."
+  "contact_message": "문의 사항은 이메일로 연락 주시기 바랍니다.",
+  "participants": "참여 기업"
 }

@@ -21,6 +21,7 @@ const navLinks = [
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
   { href: '/business', label: 'business' },
+  { href: '/participants', label: 'participants' },
 ];
 
 export default function Home() {
@@ -158,7 +159,7 @@ export default function Home() {
           className={styles.heroContent}
           style={{ transform: `translate3d(0, ${heroOffset}px, 0)`, opacity: heroOpacity }}
         >
-          <img src="/result.PNG" alt="Logo" className={styles.heroLogo} />
+          <img src="/result.png" alt="Logo" className={styles.heroLogo} />
         </div>
 
         <div className={styles.scrollCue} style={{ opacity: cueOpacity }}>

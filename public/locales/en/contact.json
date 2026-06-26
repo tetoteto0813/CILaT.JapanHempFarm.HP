@@ -1,5 +1,5 @@
 {
-  "about": "About Us",
+  "about": "Farm Overview",
   "philosophy": "Core Philosophy",
   "business": "Business Content",
   "contact": "Contact Us",
@@ -7,5 +7,6 @@
   "access": "Access",
   "faq": "Frequently Asked Questions",
   "news_title": "News",
-  "contact_message": "For inquiries, please contact us by email."
+  "contact_message": "For inquiries, please contact us by email.",
+  "participants": "Participating Companies"
 }

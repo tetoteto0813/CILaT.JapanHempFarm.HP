@@ -1,12 +1,12 @@
 {
-  "about": "关于我们",
+  "about": "农场概要",
   "philosophy": "理念",
   "news": "新闻",
   "access": "访问",
   "faq": "常见问题",
   "contact": "联系我们",
   "business": "业务",
-  "company_profile": "公司简介",
+  "company_profile": "农场概要",
   "company_name_label": "公司名称",
   "company_name": "Sample Inc.",
   "address_label": "地址",
@@ -17,5 +17,6 @@
   "representative": "FuyongLie",
   "capital_label": "资本",
   "capital": "1000万日元",
-  "back_home": "返回首页"
+  "back_home": "返回首页",
+  "participants": "参与企业"
 }

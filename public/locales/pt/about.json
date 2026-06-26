@@ -1,12 +1,12 @@
 {
-  "about": "Sobre",
+  "about": "Visão geral da fazenda",
   "philosophy": "Filosofia",
   "news": "Notícias",
   "access": "Acesso",
   "faq": "FAQ",
   "contact": "Contato",
   "business": "Negócios",
-  "company_profile": "Perfil da Empresa",
+  "company_profile": "Visão geral da fazenda",
   "company_name_label": "Nome da Empresa",
   "company_name": "Sample Inc.",
   "address_label": "Endereço",
@@ -17,5 +17,6 @@
   "representative": "Rei Tominaga",
   "capital_label": "Capital",
   "capital": "10 milhões JPY",
-  "back_home": "Voltar para Início"
+  "back_home": "Voltar para Início",
+  "participants": "Empresas participantes"
 }

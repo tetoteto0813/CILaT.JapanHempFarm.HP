@@ -1,5 +1,5 @@
 {
-  "about": "關於我們",
+  "about": "農場概要",
   "philosophy": "理念",
   "news": "新聞",
   "access": "訪問",
@@ -9,5 +9,6 @@
   "news_title": "新闻",
   "title": "新聞列表",
   "empty": "暫無新聞",
-  "home": "返回首頁"
+  "home": "返回首頁",
+  "participants": "參與企業"
 }

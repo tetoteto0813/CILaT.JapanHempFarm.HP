@@ -9,6 +9,7 @@ const navLinks = [
   { href: '/news', label: 'news' },
   { href: '/contact', label: 'contact' },
   { href: '/business', label: 'business' },
+  { href: '/participants', label: 'participants' },
 ];
 
 export default function News({ newsList }) {

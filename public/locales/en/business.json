@@ -1,19 +1,16 @@
 {
-  "about": "About Us",
+  "about": "Farm Overview",
   "philosophy": "Core Philosophy",
   "business": "Business Content",
   "contact": "Contact Us",
   "news": "News",
   "access": "Access",
   "faq": "Frequently Asked Questions",
-  "business_intro": "We provide services across web production, app development, infrastructure, and agriculture-related solutions — offering one-stop support from planning to operation.",
-  "service_web_title": "Website Production",
-  "service_web_desc": "Responsive design, CMS integration, content strategy, and SEO",
-  "service_app_title": "App Development",
-  "service_app_desc": "iOS/Android native, hybrid apps, and backend/API implementation",
-  "service_infra_title": "Infrastructure",
-  "service_infra_desc": "Cloud architecture (AWS/GCP), networking, CI/CD, monitoring and operations",
-  "service_agri_title": "Agricultural Solutions",
-  "service_agri_desc": "IoT sensors, precision agriculture, data analytics, on-site verification and operational support",
-  "service_cta": "View case studies / Contact us"
+  "business_intro": "Main business activities.",
+  "service_cta": "View case studies / Contact us",
+  "participants": "Participating Companies",
+  "business_items": [
+    "Hemp plant harvesting and cultivation business",
+    "Refined hemp fiber / hemp charcoal / hemp seed oil / various research"
+  ]
 }

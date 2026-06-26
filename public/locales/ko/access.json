@@ -1,5 +1,5 @@
 {
-  "about": "회사 소개",
+  "about": "농장 개요",
   "philosophy": "기본 철학",
   "business": "비즈니스 내용",
   "contact": "연락처",
@@ -7,5 +7,6 @@
   "access": "접근",
   "faq": "자주 묻는 질문",
   "access_message": "당 시설은 미에현 A구역에 있습니다. 출입이 엄격히 제한되어 있어 자세한 접근 정보는 공개할 수 없습니다.",
-  "back_home": "홈으로 돌아가기"
+  "back_home": "홈으로 돌아가기",
+  "participants": "참여 기업"
 }

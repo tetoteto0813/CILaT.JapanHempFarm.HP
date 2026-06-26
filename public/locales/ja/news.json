@@ -1,5 +1,5 @@
 {
-  "about": "会社概要",
+  "about": "農場概要",
   "philosophy": "基本理念",
   "news": "ニュース",
   "access": "アクセス",
@@ -9,5 +9,6 @@
   "news_title": "ニュース",
   "title": "ニュース一覧",
   "empty": "ニュースはありません",
-  "home": "ホームへ戻る"
+  "home": "ホームへ戻る",
+  "participants": "参画企業"
 }

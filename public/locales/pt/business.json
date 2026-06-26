@@ -1,19 +1,16 @@
 {
-  "about": "Sobre a empresa",
+  "about": "Visão geral da fazenda",
   "philosophy": "Filosofia básica",
   "business": "Conteúdo do negócio",
   "contact": "Entre em contato",
   "news": "Notícias",
   "access": "Acesso",
   "faq": "Perguntas frequentes",
-  "business_intro": "Oferecemos serviços em produção de sites, desenvolvimento de apps, infraestrutura e soluções agrícolas — suporte completo do planeamento à operação.",
-  "service_web_title": "Criação de sites",
-  "service_web_desc": "Design responsivo, integração CMS, estratégia de conteúdo e SEO",
-  "service_app_title": "Desenvolvimento de apps",
-  "service_app_desc": "Apps nativas iOS/Android, híbridas, e implementação de backend/API",
-  "service_infra_title": "Infraestrutura",
-  "service_infra_desc": "Arquitetura em nuvem (AWS/GCP), redes, CI/CD, monitoramento e operações",
-  "service_agri_title": "Soluções para agricultura",
-  "service_agri_desc": "Sensores IoT, agricultura de precisão, análise de dados, verificação em campo e suporte operacional",
-  "service_cta": "Ver casos / Contate-nos"
+  "business_intro": "Principais atividades de negócio.",
+  "service_cta": "Ver casos / Contate-nos",
+  "participants": "Empresas participantes",
+  "business_items": [
+    "Cultivo e colheita de cânhamo",
+    "Fibra refinada de cânhamo / carvão de cânhamo / óleo de semente de cânhamo / várias pesquisas"
+  ]
 }

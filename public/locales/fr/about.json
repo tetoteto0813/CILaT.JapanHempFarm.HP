@@ -1,12 +1,12 @@
 {
-  "about": "À propos",
+  "about": "Aperçu de la ferme",
   "philosophy": "Philosophie",
   "news": "Actualités",
   "access": "Accès",
   "faq": "FAQ",
   "contact": "Contact",
   "business": "Affaires",
-  "company_profile": "Profil de l'entreprise",
+  "company_profile": "Aperçu de la ferme",
   "company_name_label": "Nom de l'entreprise",
   "company_name": "Sample Inc.",
   "address_label": "Adresse",
@@ -17,5 +17,6 @@
   "representative": "Rei Tominaga",
   "capital_label": "Capital",
   "capital": "10 millions JPY",
-  "back_home": "Retour à l'accueil"
+  "back_home": "Retour à l'accueil",
+  "participants": "Entreprises participantes"
 }

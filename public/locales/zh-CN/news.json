@@ -1,5 +1,5 @@
 {
-  "about": "关于",
+  "about": "农场概要",
   "philosophy": "理念",
   "news": "新闻",
   "access": "访问",
@@ -9,5 +9,6 @@
   "news_title": "新闻",
   "title": "新闻列表",
   "empty": "没有新闻",
-  "home": "返回首页"
+  "home": "返回首页",
+  "participants": "参与企业"
 }
