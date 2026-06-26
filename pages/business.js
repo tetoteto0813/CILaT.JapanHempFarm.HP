@@ -29,7 +29,7 @@ export default function Business() {
       {/* ロゴ */}
       <div className="engineerHeader">
         <Link href="/" onClick={(e) => { if (typeof window !== 'undefined' && window.location.pathname === '/') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); } }}>
-          <img src="/result.PNG" alt="Logo" className="engineerLogo" />
+          <img src="/result.png" alt="Logo" className="engineerLogo" />
         </Link>
       </div>
       <nav className="engineerNav" aria-label="main navigation">
