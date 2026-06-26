@@ -3,9 +3,9 @@ import { appWithTranslation } from 'next-i18next';
 import '../styles/globals.css';
 import '../styles/engineer.css';
 
-const siteUrl = 'https://cilat.jp';
-const siteTitle = 'CILaT Co.,Ltd｜共存共栄';
-const siteDescription = 'CILaT Co.,Ltdの公式サイト。会社概要、基本理念、お問い合わせ、事業内容をご覧いただけます。';
+const siteUrl = 'https://japanhempfarm.jp';
+const siteTitle = 'JapanHempFarm｜共存共栄';
+const siteDescription = 'JapanHempFarmの公式サイトです。';
 const ogImage = `${siteUrl}/ogp.png`;
 
 function MyApp({ Component, pageProps }) {
