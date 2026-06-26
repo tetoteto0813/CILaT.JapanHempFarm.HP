@@ -4,20 +4,20 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  background: linear-gradient(180deg, #060606 0%, #0f0f0f 100%);
+  background: transparent;
   padding: 64px 20px;
-  color: #f5f5f5;
+  color: var(--text);
 }
 
 .content{
   position: relative;
   z-index: 2;
   width: min(1080px, 95%);
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: linear-gradient(180deg, rgba(255,255,255,0.36), var(--surface));
   border-radius: 14px;
   padding: 48px 56px;
-  box-shadow: 0 28px 80px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 18px 54px rgba(75,54,33,0.12), inset 0 1px 0 rgba(255,255,255,0.34);
+  border: 1px solid rgba(75,54,33,0.08);
 }
 
 /* background image behind the text: place your image at public/philosophy-bg.png */
@@ -30,20 +30,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: blur(2px) saturate(0.7);
-  opacity: 0.16;
+  filter: blur(1px) saturate(0.9);
+  opacity: 0.18;
   transform: scale(1.04);
   z-index: -1;
   pointer-events: none;
 }
 
-/* subtle dark overlay to keep text readable */
+/* subtle light overlay to keep text readable */
 .content::after {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: 14px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.18));
+  background: linear-gradient(180deg, rgba(247,241,228,0.58), rgba(244,241,233,0.74));
   z-index: -1;
   pointer-events: none;
 }
@@ -72,15 +72,15 @@
   width: 60%;
   margin: 36px auto 24px auto;
   border-radius: 6px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.95), rgba(255,255,255,0.08));
-  box-shadow: 0 0 36px rgba(220,220,220,0.08), 0 4px 18px rgba(0,0,0,0.6) inset;
+  background: linear-gradient(90deg, rgba(75,54,33,0.08), rgba(107,75,42,0.44), rgba(75,54,33,0.08));
+  box-shadow: 0 4px 14px rgba(75,54,33,0.08) inset;
   position: relative;
 }
 
 @keyframes pulseSilver {
-  0% { box-shadow: 0 0 10px rgba(255,255,255,0.04), 0 0 0 rgba(255,255,255,0); }
-  50% { box-shadow: 0 0 28px rgba(255,255,255,0.12), 0 0 6px rgba(255,255,255,0.02) inset; }
-  100% { box-shadow: 0 0 10px rgba(255,255,255,0.04), 0 0 0 rgba(255,255,255,0); }
+  0% { box-shadow: 0 0 8px rgba(75,54,33,0.04), 0 4px 14px rgba(75,54,33,0.06) inset; }
+  50% { box-shadow: 0 0 16px rgba(107,75,42,0.12), 0 4px 14px rgba(75,54,33,0.08) inset; }
+  100% { box-shadow: 0 0 8px rgba(75,54,33,0.04), 0 4px 14px rgba(75,54,33,0.06) inset; }
 }
 .silverRule{
   animation: pulseSilver 3.6s ease-in-out infinite;

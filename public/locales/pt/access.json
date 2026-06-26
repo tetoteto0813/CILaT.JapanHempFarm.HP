@@ -1,5 +1,5 @@
 {
-  "about": "Sobre a empresa",
+  "about": "Visão geral da fazenda",
   "philosophy": "Filosofia básica",
   "business": "Conteúdo do negócio",
   "contact": "Entre em contato",
@@ -7,5 +7,6 @@
   "access": "Acesso",
   "faq": "Perguntas frequentes",
   "access_message": "Nossa instalação está localizada na prefeitura de Mie, área A. Devido a restrições de entrada rigorosas, informações de acesso detalhadas não podem ser divulgadas.",
-  "back_home": "Voltar para a página inicial"
+  "back_home": "Voltar para a página inicial",
+  "participants": "Empresas participantes"
 }

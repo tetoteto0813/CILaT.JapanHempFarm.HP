@@ -1,12 +1,12 @@
 {
-  "about": "회사 소개",
+  "about": "농장 개요",
   "philosophy": "철학",
   "news": "뉴스",
   "access": "오시는 길",
   "faq": "자주 묻는 질문",
   "contact": "문의하기",
   "business": "비즈니스",
-  "company_profile": "회사 프로필",
+  "company_profile": "농장 개요",
   "company_name_label": "회사명",
   "company_name": "Sample Inc.",
   "address_label": "주소",
@@ -17,5 +17,7 @@
   "representative": "레이 토미나가",
   "capital_label": "자본금",
   "capital": "1,000만 엔",
-  "back_home": "홈으로 돌아가기"
+  "back_home": "홈으로 돌아가기",
+  "participants": "참여 기업",
+  "location_notice": "출입이 엄격히 제한된 장소이므로 자세한 위치 정보는 공개하지 않습니다."
 }

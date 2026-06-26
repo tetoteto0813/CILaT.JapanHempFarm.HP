@@ -1,5 +1,5 @@
 {
-  "about": "회사 소개",
+  "about": "농장 개요",
   "philosophy": "기본 철학",
   "business": "비즈니스 내용",
   "contact": "연락처",
@@ -8,6 +8,8 @@
   "faq": "자주 묻는 질문",
   "news_title": "뉴스",
   "title": "뉴스 목록",
-  "empty": "뉴스가 없습니다",
-  "home": "홈으로 돌아가기"
+  "empty": "아직 뉴스가 없습니다",
+  "home": "홈으로 돌아가기",
+  "participants": "참여 기업",
+  "back_to_news": "뉴스 목록으로 돌아가기"
 }

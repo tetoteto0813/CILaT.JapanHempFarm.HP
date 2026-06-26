@@ -1,19 +1,16 @@
 {
-  "about": "公司简介",
+  "about": "农场概要",
   "philosophy": "基本理念",
   "business": "业务内容",
   "contact": "联系我们",
   "news": "新闻",
   "access": "访问",
   "faq": "常见问题",
-  "business_intro": "我们提供网站制作、应用开发、基础设施构建以及农业相关解决方案——从策划到运营的一站式支持。",
-  "service_web_title": "网站制作",
-  "service_web_desc": "响应式设计、CMS 集成、内容策划与 SEO",
-  "service_app_title": "应用开发",
-  "service_app_desc": "iOS/Android 原生与混合应用，后端/API 实现",
-  "service_infra_title": "基础设施",
-  "service_infra_desc": "云架构（AWS/GCP）、网络、CI/CD、监控与运维",
-  "service_agri_title": "农业相关解决方案",
-  "service_agri_desc": "IoT 传感器、精细农业、数据分析、现场验证与运维支持",
-  "service_cta": "查看案例 / 联系我们"
+  "business_intro": "主要业务内容。",
+  "service_cta": "查看案例 / 联系我们",
+  "participants": "参与企业",
+  "business_items": [
+    "大麻草采收与栽培业务",
+    "精麻 / 麻炭 / 火麻籽油 / 各类研究"
+  ]
 }

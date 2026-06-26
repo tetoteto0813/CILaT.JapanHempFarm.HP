@@ -1,5 +1,5 @@
 {
-  "about": "Sobre",
+  "about": "Visão geral da fazenda",
   "philosophy": "Filosofia",
   "news": "Notícias",
   "access": "Acesso",
@@ -8,6 +8,8 @@
   "business": "Negócios",
   "news_title": "Notícias",
   "title": "Lista de notícias",
-  "empty": "Nenhuma notícia disponível",
-  "home": "Voltar para a página inicial"
+  "empty": "Ainda não há notícias",
+  "home": "Voltar para a página inicial",
+  "participants": "Empresas participantes",
+  "back_to_news": "Voltar às notícias"
 }

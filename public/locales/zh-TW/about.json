@@ -1,12 +1,12 @@
 {
-  "about": "關於我們",
+  "about": "農場概要",
   "philosophy": "理念",
   "news": "新聞",
   "access": "訪問",
   "faq": "常見問題",
   "contact": "聯絡我們",
   "business": "業務",
-  "company_profile": "公司簡介",
+  "company_profile": "農場概要",
   "company_name_label": "公司名稱",
   "company_name": "Sample Inc.",
   "address_label": "地址",
@@ -17,5 +17,7 @@
   "representative": "FuyongLie",
   "capital_label": "資本",
   "capital": "1000萬日圓",
-  "back_home": "返回首頁"
+  "back_home": "返回首頁",
+  "participants": "參與企業",
+  "location_notice": "由於該地點嚴格限制進入，因此不公開詳細位置資訊。"
 }

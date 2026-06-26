@@ -11,12 +11,15 @@ const navLinks = [
   { href: '/about', label: 'about' },
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
+  { href: '/news', label: 'news' },
   { href: '/business', label: 'business' },
+  { href: '/participants', label: 'participants' },
 ];
 
 export default function Business() {
   const { t, i18n } = useTranslation('business');
   const router = useRouter();
+  const businessItems = t('business_items', { returnObjects: true }) || [];
 
   return (
     <div className="engineerPage businessPage">
@@ -49,38 +52,11 @@ export default function Business() {
             <h1 className={styles.title}>{t('business') || 'Business'}</h1>
             <p className={styles.sub}>{t('business_intro')}</p>
 
-            <ul>
-              <li>
-                <strong>{t('service_web_title')}</strong>
-                <div className={styles.sub}>{t('service_web_desc')}</div>
-              </li>
-              <li>
-                <strong>{t('service_app_title')}</strong>
-                <div className={styles.sub}>{t('service_app_desc')}</div>
-              </li>
-              <li>
-                <strong>{t('service_infra_title')}</strong>
-                <div className={styles.sub}>{t('service_infra_desc')}</div>
-              </li>
-              <li>
-                <strong>{t('service_agri_title')}</strong>
-                <div className={styles.sub}>{t('service_agri_desc')}</div>
-              </li>
+            <ul className={styles.businessList}>
+              {businessItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
-
-            <div style={{ marginTop: 20 }}>
-              <Link href="/contact" locale={i18n.language} className={styles.contactBtn} aria-label={t('service_cta')}>
-                <img src="/contact-button.png" alt={t('service_cta')} />
-                <span className={styles.btnText}>
-                  {String(t('service_cta')).split('\n').map((line, idx) => (
-                    <span key={idx}>
-                      {line}
-                      {idx < String(t('service_cta')).split('\n').length - 1 ? <br /> : null}
-                    </span>
-                  ))}
-                </span>
-              </Link>
-            </div>
           </TerminalFrame>
         </div>
       </div>

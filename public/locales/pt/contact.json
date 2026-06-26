@@ -1,5 +1,5 @@
 {
-  "about": "Sobre a empresa",
+  "about": "Visão geral da fazenda",
   "philosophy": "Filosofia básica",
   "business": "Conteúdo do negócio",
   "contact": "Entre em contato",
@@ -7,5 +7,7 @@
   "access": "Acesso",
   "faq": "Perguntas frequentes",
   "news_title": "Notícias",
-  "contact_message": "Para dúvidas, entre em contato conosco por e-mail."
+  "contact_message": "Para dúvidas, entre em contato conosco por e-mail.",
+  "participants": "Empresas participantes",
+  "contact_notice": "As informações de contato podem ser alteradas no futuro."
 }

@@ -4,18 +4,18 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  background: linear-gradient(180deg, var(--bg), var(--section-bg));
+  background: transparent;
   color: var(--text);
   font-family: 'Noto Sans JP', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
 }
 .panel {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), var(--surface));
+  background: linear-gradient(180deg, rgba(255,255,255,0.36), var(--surface));
   padding: 36px 40px;
   border-radius: 14px;
   max-width: 820px;
   width: 100%;
-  box-shadow: 0 18px 56px rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 18px 54px rgba(75,54,33,0.12);
+  border: 1px solid rgba(75,54,33,0.08);
 }
 /* Decorative silver bubbles background */
 .panel {
@@ -33,32 +33,31 @@
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
-  opacity: 0.12;
+  opacity: 0.08;
   transform: rotate(4deg) scale(1.02);
-  filter: grayscale(100%) contrast(120%) brightness(130%);
-  mix-blend-mode: screen;
+  filter: sepia(28%) saturate(0.9) brightness(1.08);
+  mix-blend-mode: multiply;
   pointer-events: none;
 }
 .panel::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));
+  background: linear-gradient(180deg, rgba(247,241,228,0.18), rgba(244,241,233,0.28));
   pointer-events: none;
+  z-index: 0;
 }
 
-/* Tuned silver accents for headings */
-.title { color: #e9edf0; text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 1px 0 rgba(255,255,255,0.06); }
-.sub { color: rgba(230,230,235,0.9); }
+.panel > * {
+  position: relative;
+  z-index: 1;
+}
+
 .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.9rem; margin-bottom:12px; color:var(--text); }
 .sub { color: var(--text-secondary); margin-bottom: 18px }
+.businessList { display: grid; gap: 14px; margin: 24px 0; padding-left: 1.2rem; color: var(--text); font-size: 1.12rem; line-height: 1.8; }
+.businessList li::marker { color: var(--primary); }
 .cta { display:inline-block; background: var(--primary); color: var(--text); padding:10px 20px; border-radius:10px; font-weight:700 }
-
-/* Contact button as image with overlaid text */
-.contactBtn { position: relative; display: block; width: 320px; max-width: 90%; margin: 0 auto; text-decoration: none; }
-.contactBtn img { width: 100%; height: auto; display: block; border-radius: 8px; filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45)); transition: transform 180ms ease; }
-.btnText { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-weight: 700; font-family: 'Playfair Display', Georgia, serif; font-size: 1rem; line-height: 1.2; text-align: center; pointer-events: none; -webkit-font-smoothing: antialiased; text-shadow: 0 6px 16px rgba(0,0,0,0.75), 0 1px 0 rgba(255,255,255,0.06); }
-.contactBtn:hover img { transform: translateY(-2px); }
 
 @media (max-width:720px) {
   .container {
@@ -80,8 +79,4 @@
     display: none;
   }
 
-  .contactBtn {
-    width: min(320px, 100%);
-    margin-bottom: 56px;
-  }
 }

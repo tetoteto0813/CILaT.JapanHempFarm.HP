@@ -1,14 +1,15 @@
 {
-  "about": "À propos",
+  "about": "Aperçu de la ferme",
   "philosophy": "Philosophie",
   "news": "Actualités",
   "access": "Accès",
   "faq": "FAQ",
   "contact": "Contact",
   "business": "Affaires",
-  "news_title": "Nouvelles",
+  "news_title": "Actualités",
   "title": "Liste des actualités",
-  "empty": "Aucune actualité",
-  "home": "Retour à l'accueil"
+  "empty": "Aucune actualité pour le moment",
+  "home": "Retour à l'accueil",
+  "participants": "Entreprises participantes",
+  "back_to_news": "Retour aux actualités"
 }
-

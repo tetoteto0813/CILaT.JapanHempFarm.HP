@@ -1,10 +1,12 @@
 {
-  "about": "À propos de l'entreprise",
+  "about": "Aperçu de la ferme",
   "philosophy": "Philosophie de base",
   "business": "Contenu de l'entreprise",
   "contact": "Nous contacter",
   "news": "Nouvelles",
   "access": "Accès",
   "faq": "Questions fréquentes",
-  "news_title": "Nouvelles"
+  "news_title": "Nouvelles",
+  "participants": "Entreprises participantes",
+  "contact_notice": "Les coordonnées de contact sont susceptibles de changer à l’avenir."
 }

@@ -20,7 +20,9 @@ const navLinks = [
   { href: '/about', label: 'about' },
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
+  { href: '/news', label: 'news' },
   { href: '/business', label: 'business' },
+  { href: '/participants', label: 'participants' },
 ];
 
 export default function Home() {
@@ -102,11 +104,6 @@ export default function Home() {
 
   return (
     <div key={i18n.language}>
-      <Head>
-        <title>CILaT Co.,Ltd</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
-      </Head>
 
       <div className={styles.container}>
         <div
@@ -158,7 +155,7 @@ export default function Home() {
           className={styles.heroContent}
           style={{ transform: `translate3d(0, ${heroOffset}px, 0)`, opacity: heroOpacity }}
         >
-          <img src="/result.PNG" alt="Logo" className={styles.heroLogo} />
+          <img src="/result.png" alt="Logo" className={styles.heroLogo} />
         </div>
 
         <div className={styles.scrollCue} style={{ opacity: cueOpacity }}>

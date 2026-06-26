@@ -9,7 +9,9 @@ const navLinks = [
   { href: '/about', label: 'about' },
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
+  { href: '/news', label: 'news' },
   { href: '/business', label: 'business' },
+  { href: '/participants', label: 'participants' },
 ];
 
 // 仮FAQリスト（必要に応じて翻訳ファイルで管理も可）

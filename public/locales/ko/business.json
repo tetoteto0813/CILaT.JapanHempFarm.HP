@@ -1,19 +1,16 @@
 {
-  "about": "회사 소개",
+  "about": "농장 개요",
   "philosophy": "기본 철학",
-  "business": "비즈니스 내용",
+  "business": "사업 내용",
   "contact": "연락처",
   "news": "뉴스",
   "access": "접근",
   "faq": "자주 묻는 질문",
-  "business_intro": "당사는 웹 제작, 앱 개발, 인프라 구축 및 농업 관련 솔루션까지 기획부터 운영까지 원스톱으로 제공합니다.",
-  "service_web_title": "홈페이지 제작",
-  "service_web_desc": "반응형 디자인, CMS 도입, 콘텐츠 설계, SEO 대응",
-  "service_app_title": "앱 개발",
-  "service_app_desc": "iOS/Android 네이티브, 하이브리드, 백엔드/API 설계·구현",
-  "service_infra_title": "인프라 구축",
-  "service_infra_desc": "클라우드 설계(AWS/GCP 등), 네트워크, CI/CD, 모니터링·운영 설계",
-  "service_agri_title": "농업 관련 솔루션",
-  "service_agri_desc": "IoT 센서, 정밀 농업, 데이터 분석, 현장 검증 및 운영 지원",
-  "service_cta": "사례 보기 / 문의하기"
+  "business_intro": "주요 사업 내용입니다.",
+  "service_cta": "사례 보기 / 문의하기",
+  "participants": "참여 기업",
+  "business_items": [
+    "대마초 채취 및 재배 사업",
+    "정마 / 대마 숯 / 헴프시드 오일 / 각종 연구"
+  ]
 }

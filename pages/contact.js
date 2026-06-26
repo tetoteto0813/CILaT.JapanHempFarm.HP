@@ -10,7 +10,9 @@ const navLinks = [
   { href: '/about', label: 'about' },
   { href: '/philosophy', label: 'philosophy' },
   { href: '/contact', label: 'contact' },
+  { href: '/news', label: 'news' },
   { href: '/business', label: 'business' },
+  { href: '/participants', label: 'participants' },
 ];
 
 export default function Contact() {
@@ -18,7 +20,7 @@ export default function Contact() {
   const router = useRouter();
 
   return (
-    <div className="engineerPage">
+    <div className="engineerPage contactPage">
       <Head>
         <title>{t('contact') || 'Contact'}</title>
       </Head>
@@ -49,6 +51,7 @@ export default function Contact() {
           <h1 className="engineerTitle">{t('contact')}</h1>
           <p className="engineerSub">{t('contact_message', 'For inquiries, please contact us by email.')}</p>
             <a href="mailto:cilat.20250905@gmail.com" className="cta mail" style={{ display: 'inline-block', marginTop: 14 }}>cilat.20250905@gmail.com</a>
+            <p className="contactNotice">{t('contact_notice')}</p>
           </div>
         </TerminalFrame>
       </div>
@@ -62,6 +65,13 @@ export default function Contact() {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.contactNotice {
+  margin: 18px auto 0;
+  color: var(--text-secondary);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.92rem;
+  line-height: 1.7;
 }
 `}</style>
     </div>

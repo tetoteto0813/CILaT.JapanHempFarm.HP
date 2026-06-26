@@ -1,5 +1,5 @@
 {
-  "about": "公司简介",
+  "about": "農場概要",
   "philosophy": "基本理念",
   "business": "业务内容",
   "contact": "联系我们",
@@ -7,5 +7,6 @@
   "access": "访问",
   "faq": "常见问题",
   "access_message": "我们的设施位于三重县A地区。由于出入限制严格，无法公开详细的访问信息。",
-  "back_home": "返回首页"
+  "back_home": "返回首页",
+  "participants": "參與企業"
 }

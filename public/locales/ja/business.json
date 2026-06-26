@@ -1,19 +1,16 @@
 {
-  "about": "会社概要",
+  "about": "農場概要",
   "philosophy": "基本理念",
   "business": "事業内容",
   "contact": "お問い合わせ",
   "news": "ニュース",
   "access": "アクセス",
   "faq": "よくある質問",
-  "business_intro": "当社は以下の分野でサービスを提供しています。ウェブ制作からアプリ開発、インフラ構築、そして農業分野向けの技術支援まで、ワンストップで対応します。",
-  "service_web_title": "ホームページ制作",
-  "service_web_desc": "レスポンシブデザイン、CMS導入、コンテンツ設計、SEO対策を含むサイト構築",
-  "service_app_title": "アプリ開発",
-  "service_app_desc": "iOS／Androidネイティブ、ハイブリッド、バックエンドAPIの設計・実装",
-  "service_infra_title": "インフラ構築",
-  "service_infra_desc": "クラウド設計（AWS/GCP等）、ネットワーク、CI/CD、監視・運用設計",
-  "service_agri_title": "農業関連ソリューション",
-  "service_agri_desc": "IoTセンサー、精密農業、データ解析、現場での検証と運用支援",
-  "service_cta": "詳しい事例\nお問い合わせはこちら"
+  "business_intro": "主な事業内容です。",
+  "service_cta": "詳しい事例\nお問い合わせはこちら",
+  "participants": "参画企業",
+  "business_items": [
+    "大麻草採取栽培事業",
+    "精麻/麻炭/ヘンプシードオイル/各種研究"
+  ]
 }

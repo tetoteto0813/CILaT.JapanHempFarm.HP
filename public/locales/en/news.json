@@ -1,5 +1,5 @@
 {
-  "about": "About",
+  "about": "Farm Overview",
   "philosophy": "Philosophy",
   "news": "News",
   "access": "Access",
@@ -8,6 +8,8 @@
   "business": "Business",
   "news_title": "News",
   "title": "News List",
-  "empty": "No news available",
-  "home": "Back to Home"
+  "empty": "No news yet",
+  "home": "Back to Home",
+  "participants": "Participating Companies",
+  "back_to_news": "Back to News"
 }

@@ -8,9 +8,9 @@
   --home-accent: #d9d5cc;
   --home-shadow: rgba(0, 0, 0, 0.48);
   /* blue-tinted homepage palette */
-  --home-bg: #63a7c6; /* pale sky blue */
-  --home-bg-soft: #052333;
-  --home-accent: #2801eb76;
+  --home-bg: #2d6c40; /* pale sky blue */
+  --home-bg-soft: #28e517;
+  --home-accent: #ffffff;
   --home-shadow: rgba(6, 0, 7, 0.18);
   position: relative;
   width: 100%;
@@ -19,7 +19,7 @@
   overflow: hidden;
   /* place the artwork as the base background */
   background-color: var(--home-bg);
-  background-image: url('/result2.PNG');
+  background-image: url('/result2.png');
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,12 +114,16 @@
   outline: none;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: color 0.24s ease, transform 0.24s ease;
+  transition: color 0.24s ease, text-shadow 0.24s ease, transform 0.24s ease;
 }
 
 .navItem:hover,
 .navItem:focus-visible {
   color: var(--home-accent);
+  text-shadow:
+    0 0 8px rgba(255, 232, 162, 0.9),
+    0 0 18px rgba(244, 207, 115, 0.7),
+    0 8px 28px rgba(85, 50, 12, 0.42);
   transform: translateX(6px);
 }
 
@@ -185,11 +189,18 @@
 }
 
 .heroLogo {
-  width: clamp(110px, 14vw, 160px);
-  margin-top: 8px;
+  width: clamp(140px, 26vw, 360px);
+  margin-top: 80px;
   margin-bottom: 12px;
   display: block;
+  position: relative;
+  z-index: 3;
   filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.4));
+}
+
+/* Ensure logo is visible even if older CSS sets it to hidden */
+.heroContent .heroLogo {
+  display: block !important;
 }
 
 .heroTitle {
@@ -250,8 +261,8 @@
 }
 
 .languageButton {
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 8px 12px;
+  font-size: 0.95rem;
   color: var(--home-text);
   background-color: transparent;
   border: 1px solid transparent;
@@ -272,15 +283,17 @@
   position: absolute;
   bottom: 110%;
   right: 0;
-  background: rgba(10, 10, 10, 0.95);
-  border: 1px solid var(--home-border);
+  /* frosted glass */
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
-  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 10px 30px rgba(6, 18, 28, 0.12);
   list-style: none;
   margin: 0;
   padding: 8px 0;
   min-width: 148px;
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
 }
 
 .languageMenuItem {
@@ -297,7 +310,7 @@
 .languageMenuItem:hover,
 .languageMenuItem:focus-visible,
 .languageMenuItemActive {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(247,241,228,0.12); /* light beige hover */
 }
 
 @keyframes fadeInNav {
@@ -390,7 +403,7 @@
   }
 
   .heroLogo {
-    width: clamp(88px, 20vw, 116px);
+    width: clamp(110px, 40vw, 220px);
     margin-bottom: 8px;
   }
 
@@ -406,16 +419,31 @@
 
   .languageMenuWrap {
     right: 16px;
-    bottom: 18px;
+    top: 18px;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+  }
+
+  /* ensure the menu opens downward from a top-anchored button on mobile */
+  .languageMenu {
+    bottom: auto;
+    top: 110%;
   }
 
   .languageButton {
-    padding: 8px 14px;
-    font-size: 0.9rem;
+    padding: 6px 10px;
+    font-size: 0.95rem;
   }
 
   .languageMenu {
     min-width: 132px;
+  }
+
+  /* Make hero logo appropriately smaller on small screens */
+  .heroLogo {
+    width: clamp(96px, 30vw, 160px);
   }
 }
 
