@@ -4,12 +4,8 @@
   "business": "비즈니스 내용",
   "contact": "연락처",
   "news": "뉴스",
-  "access": "접근",
-  "faq": "자주 묻는 질문",
   "news_title": "뉴스",
-  "title": "뉴스 목록",
   "empty": "아직 뉴스가 없습니다",
-  "home": "홈으로 돌아가기",
   "participants": "참여 기업",
   "back_to_news": "뉴스 목록으로 돌아가기"
 }

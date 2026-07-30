@@ -69,7 +69,7 @@ export default function Contact() {
 .contactNotice {
   margin: 18px auto 0;
   color: var(--text-secondary);
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Yuji Syuku', 'Shippori Mincho', serif;
   font-size: 0.92rem;
   line-height: 1.7;
 }

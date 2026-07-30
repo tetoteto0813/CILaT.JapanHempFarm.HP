@@ -72,7 +72,7 @@ html,body,#__next{height:100%;}
 
 body{
 	margin:0;
-	font-family: 'Noto Sans JP','Noto Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
 	color: var(--text);
 	background-color: var(--bg);
 	background-image: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0));
@@ -82,18 +82,18 @@ body{
 	line-height:1.75;
 }
 
-/* Headings — use a refined serif feel for display */
+/* Headings use a brush-influenced Japanese face. */
 
-h1,h2,h3{ font-family: 'Playfair Display', 'Times New Roman', Georgia, serif; color:var(--text); letter-spacing:0.02em; margin:0 0 0.8rem 0; }
+h1,h2,h3{ font-family: 'Yuji Syuku', 'Shippori Mincho', 'Hiragino Mincho ProN', serif; color:var(--text); letter-spacing:0.04em; margin:0 0 0.8rem 0; font-weight:400; }
 
 /* Apply Home nav font to site navigation links for visual consistency */
 nav a,
 header a,
 .site-nav a {
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Yuji Syuku', 'Shippori Mincho', serif;
 }
 
-/* Apply Playfair to engineer pages and major content areas when desired */
+/* Apply Japanese serif typography to engineer pages and major content areas when desired */
 .engineerPage,
 .container,
 .content,
@@ -101,7 +101,7 @@ header a,
 .body,
 .engineerPage h1,.engineerPage h2,.engineerPage h3,
 .engineerPage p,.engineerPage li,.engineerPage table,.engineerPage th,.engineerPage td {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
 }
 
 a{ color:var(--link); text-decoration:none; position:relative; }

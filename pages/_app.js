@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:description" content={siteDescription} key="twitter:description" />
         <meta name="twitter:image" content={ogImage} key="twitter:image" />
         <link rel="canonical" href={siteUrl} key="canonical" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Yuji+Boku&family=Yuji+Syuku&display=swap" rel="stylesheet" />
       </Head>
       <Component {...pageProps} />
     </>

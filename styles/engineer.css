@@ -1,19 +1,18 @@
 /* Engineer-themed extras for all non-top pages */
 :root{
-  /* Japan Hemp Farm palette — light, natural greens and browns */
-  --primary: #A9C94A; /* Leaf Green */
-  --secondary: #6B4B2A; /* Wood Brown */
-  --support: #59C3D8; /* Ocean / accent blue */
-  --bg: #F7F1E4; /* Main beige background */
-  --section-bg: #E9DCC6; /* Sand / section */
-  --surface: #F4F1E9; /* card surface */
-  --border: #CFC89A; /* warm taupe border */
-  --text: #4B3621; /* Dark brown text for readability */
-  --text-secondary: #6B4B2A; /* secondary text */
-  --muted: #9AA3AB; /* muted neutral */
+  /* Japan Hemp Farm palette: washi beige, sumi ink, and muted kincha */
+  --primary: #A77A3F;
+  --secondary: #6B4B2A;
+  --support: #8D6B3F;
+  --bg: #F7F1E4;
+  --section-bg: #E9DCC6;
+  --surface: #F8F2E6;
+  --border: #CFC3A1;
+  --text: #3F3020;
+  --text-secondary: #6B4B2A;
+  --muted: #9C8C78;
   --link: var(--text);
   --link-hover: #7A4F22;
-  --gold-glow: rgba(232, 205, 143, 0.58);
 }
 
 /* Page wrapper */
@@ -21,7 +20,7 @@
   min-height:100vh;
   background: linear-gradient(180deg, var(--bg), var(--section-bg));
   color:var(--text);
-  font-family: Inter, 'Noto Sans JP', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
   position:relative;
   overflow-x:hidden;
 }
@@ -35,8 +34,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: saturate(0.9) contrast(0.95);
-  opacity: 0.34;
+  filter: sepia(0.12) saturate(0.74) contrast(0.98);
+  opacity: 0.28;
   transform: none;
   pointer-events:none;
   z-index:0;
@@ -74,9 +73,9 @@
 
 /* navigation */
 .engineerNav{ display:flex; flex-direction:column; align-items:center; gap:10px; margin-bottom:24px }
-.engineerNav a{ color:var(--link); text-decoration:none; font-weight:600; letter-spacing:0.02em; padding:6px 8px; border-radius:6px; background-image: linear-gradient(var(--link-hover), var(--link-hover)); background-repeat:no-repeat; background-position: left bottom; background-size: 0 1px; transition: color .16s, background-size .16s, text-shadow .16s, transform .12s }
-.engineerNav a.active{ font-weight:800; color:var(--link-hover); background-size: 100% 1px; text-shadow: 0 0 8px rgba(255, 238, 190, 0.36), 0 0 14px var(--gold-glow); transform: translateX(4px) }
-.engineerNav a:hover{ color:var(--link-hover); background-size: 100% 1px; text-shadow: 0 0 8px rgba(255, 238, 190, 0.5), 0 0 16px var(--gold-glow), 0 8px 22px rgba(75, 54, 33, 0.18); transform: translateX(6px) }
+.engineerNav a{ color:var(--link); text-decoration:none; font-weight:600; letter-spacing:0.02em; padding:6px 8px; border-radius:6px; background-image: linear-gradient(var(--link-hover), var(--link-hover)); background-repeat:no-repeat; background-position: left bottom; background-size: 0 1px; transition: color .16s, background-size .16s, transform .12s }
+.engineerNav a.active{ font-weight:800; color:var(--link-hover); background-size: 100% 1px; transform: translateX(4px) }
+.engineerNav a:hover{ color:var(--link-hover); background-size: 100% 1px; transform: translateX(6px) }
 
 /* content card */
 .engineerCard{ 
@@ -107,7 +106,7 @@
   pointer-events: none;
 }
 .engineerCard > *{ position: relative; z-index: 2; }
-.engineerTitle{ font-family: 'Playfair Display', Georgia, serif; font-size:2rem; margin:0 0 8px 0; color:var(--text); }
+.engineerTitle{ font-family: 'Yuji Syuku', 'Shippori Mincho', serif; font-size:2rem; margin:0 0 8px 0; color:var(--text); font-weight:400; letter-spacing:0.04em; }
 .engineerSub{ color:var(--text-secondary); margin-bottom:18px }
 
 .engineerPage .engineerCard{
@@ -128,7 +127,7 @@
   border: 2px solid rgba(75,54,33,0.12);
   padding: 14px 36px;
   border-radius: 14px;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Yuji Syuku', 'Shippori Mincho', serif;
   font-size: 1.4rem;
   letter-spacing: 0.04em;
   box-shadow: 0 6px 18px rgba(75,54,33,0.06) inset;
