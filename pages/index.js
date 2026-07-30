@@ -106,6 +106,17 @@ export default function Home() {
     <div key={i18n.language}>
 
       <div className={styles.container}>
+        <video
+          className={styles.backgroundVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+        >
+          <source src="/video_576362192233038225-OYudwHbl.mp4" type="video/mp4" />
+        </video>
         <div
           aria-hidden
           className={styles.heroBackdrop}
@@ -155,7 +166,6 @@ export default function Home() {
           className={styles.heroContent}
           style={{ transform: `translate3d(0, ${heroOffset}px, 0)`, opacity: heroOpacity }}
         >
-          <img src="/result.png" alt="Logo" className={styles.heroLogo} />
         </div>
 
         <div className={styles.scrollCue} style={{ opacity: cueOpacity }}>

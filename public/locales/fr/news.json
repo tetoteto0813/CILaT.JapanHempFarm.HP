@@ -2,14 +2,10 @@
   "about": "Aperçu de la ferme",
   "philosophy": "Philosophie",
   "news": "Actualités",
-  "access": "Accès",
-  "faq": "FAQ",
   "contact": "Contact",
   "business": "Affaires",
   "news_title": "Actualités",
-  "title": "Liste des actualités",
   "empty": "Aucune actualité pour le moment",
-  "home": "Retour à l'accueil",
   "participants": "Entreprises participantes",
   "back_to_news": "Retour aux actualités"
 }

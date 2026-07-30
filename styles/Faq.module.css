@@ -19,7 +19,7 @@
 
 /* FAQ panel overrides to look like a design agency card */
 .faqCard{ background: linear-gradient(180deg, rgba(255,255,255,0.02), var(--surface)); border-radius:14px; padding:40px; max-width:920px; margin:0 auto; box-shadow: 0 30px 80px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.04); }
-.faqTitle{ font-family: 'Playfair Display', Georgia, serif; font-size:2.0rem; margin-bottom:.6rem; color:var(--text); }
+.faqTitle{ font-family: 'Yuji Syuku', 'Shippori Mincho', serif; font-size:2.0rem; margin-bottom:.6rem; color:var(--text); font-weight:400; letter-spacing:0.04em; }
 .faqRule{ height:6px; width:88px; background: linear-gradient(90deg,var(--primary), var(--secondary)); border-radius:4px; margin-bottom:18px; }
 .faqQuestion{ font-weight:700; font-size:1.12rem; margin-bottom:6px; color:var(--text); }
 .faqAnswer{ white-space:pre-line; color:var(--text-secondary); line-height:1.85; }

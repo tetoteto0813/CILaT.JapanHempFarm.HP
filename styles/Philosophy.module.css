@@ -49,11 +49,12 @@
 }
 
 .title{
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Yuji Syuku', 'Shippori Mincho', serif;
   font-size: clamp(1.6rem, 2.6vw, 2.6rem);
   margin: 0 0 18px 0;
   color: var(--text);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -62,7 +63,7 @@
   font-size: 1.05rem;
   line-height: 1.95;
   margin-top: 12px;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
 }
 
 .body p{ margin: 0 0 1rem 0 }
