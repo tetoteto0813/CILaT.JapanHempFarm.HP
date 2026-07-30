@@ -45,7 +45,7 @@ export default function About() {
       </nav>
       {/* 農場概要 */}
       <div className="engineerCard aboutFarmCard">
-        <img src="/IMG_0811.png" alt={t('about')} className="aboutFarmImage" />
+        <img src="/IMG_1550.jpg" alt={t('about')} className="aboutFarmImage" />
         <p className="aboutLocationNotice">{t('location_notice')}</p>
       </div>
       <style jsx global>{`
@@ -64,7 +64,7 @@ export default function About() {
   to   { opacity: 1; transform: translateX(0);} 
 }
 
-/* Page-scoped palette adjusted to site theme (greens / browns) */
+/* Page-scoped palette adjusted to the washi beige theme */
 .engineerPage {
   --bg: #F7F1E4;
   --section-bg: #E9DCC6;
@@ -72,22 +72,22 @@ export default function About() {
   --text: #4B3621;
   --text-secondary: #6B4B2A;
   --border: #CFC89A;
-  --primary: #A9C94A; /* Leaf Green */
-  --cta-text: #000000;
-  font-family: 'Inter', system-ui, -apple-system, 'Noto Sans JP', 'Segoe UI', Roboto, Arial, sans-serif;
+  --primary: #A77A3F;
+  --cta-text: #fffaf0;
+  font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
 }
 .engineerPage .engineerCard { background: linear-gradient(180deg, rgba(0,0,0,0.02), var(--surface)); border: 1px solid rgba(75,54,33,0.06); }
 .engineerPage .engineerTitle { color: var(--text); letter-spacing: 0.02em; }
 .engineerPage table th { color: var(--text-secondary); }
 .engineerPage a.cta.secondary { background: transparent; border: 1px solid var(--primary); color: var(--primary); padding: 8px 14px; border-radius:6px; }
-.engineerPage .engineerTitle, .engineerPage .engineerCard, .engineerPage table, .engineerPage th, .engineerPage td { font-family: 'Playfair Display', Georgia, serif; }
+.engineerPage .engineerTitle, .engineerPage .engineerCard, .engineerPage table, .engineerPage th, .engineerPage td { font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif; }
 .aboutFarmCard { max-width: 920px; text-align: center; }
 .aboutFarmImage { display: block; width: min(100%, 760px); height: auto; margin: 0 auto; border-radius: 12px; box-shadow: 0 18px 54px rgba(75,54,33,0.14); }
-.aboutLocationNotice { width: min(100%, 760px); margin: 18px auto 0; color: var(--text-secondary); font-family: 'Playfair Display', Georgia, serif; font-size: 0.98rem; line-height: 1.8; text-align: left; }
+.aboutLocationNotice { width: min(100%, 760px); margin: 22px auto 0; padding: 14px 0; color: var(--text-secondary); font-family: 'Yuji Syuku', 'Shippori Mincho', serif; font-size: 1.02rem; line-height: 1.9; letter-spacing: 0.05em; text-align: center; border-top: 1px solid rgba(107,75,42,0.22); border-bottom: 1px solid rgba(107,75,42,0.22); }
 @media (max-width: 720px) {
   .aboutFarmCard { margin: 0 16px 28px; padding: 24px 18px; }
   .aboutFarmImage { border-radius: 10px; }
-  .aboutLocationNotice { font-size: 0.92rem; line-height: 1.7; }
+  .aboutLocationNotice { font-size: 0.94rem; line-height: 1.75; text-align: left; }
 }
       `}</style>
     </div>

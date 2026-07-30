@@ -2,14 +2,10 @@
   "about": "農場概要",
   "philosophy": "理念",
   "news": "新聞",
-  "access": "訪問",
-  "faq": "常見問題",
   "contact": "聯絡我們",
   "business": "業務",
   "news_title": "最新消息",
-  "title": "最新消息列表",
   "empty": "目前沒有最新消息",
-  "home": "返回首頁",
   "participants": "參與企業",
   "back_to_news": "返回最新消息列表"
 }
