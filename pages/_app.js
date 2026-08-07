@@ -6,7 +6,7 @@ import '../styles/engineer.css';
 const siteUrl = 'https://japanhempfarm.jp';
 const siteTitle = 'JapanHempFarm｜共存共栄';
 const siteDescription = 'JapanHempFarmの公式サイトです。';
-const ogImage = `${siteUrl}/ogp.png`;
+const ogImage = `${siteUrl}/ogp.jpg`;
 
 function MyApp({ Component, pageProps }) {
   return (
