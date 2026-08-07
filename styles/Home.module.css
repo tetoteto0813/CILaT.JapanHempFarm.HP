@@ -13,13 +13,10 @@
   min-height: 100svh;
   overflow: hidden;
   background-color: var(--home-bg);
-  background-image: url('/result2.JPG');
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .backgroundVideo {
+  display: block;
   position: absolute;
   inset: 0;
   z-index: 0;

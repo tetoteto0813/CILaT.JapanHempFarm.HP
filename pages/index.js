@@ -33,6 +33,7 @@ export default function Home() {
   const [parallaxY, setParallaxY] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
   const langMenuRef = useRef(null);
+  const backgroundVideoRef = useRef(null);
 
   useEffect(() => {
     const idx = languages.findIndex((language) => language.code === i18n.language);
@@ -85,6 +86,40 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const video = backgroundVideoRef.current;
+    if (!video) {
+      return undefined;
+    }
+
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    video.setAttribute('muted', '');
+    video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
+
+    const playVideo = () => {
+      const playPromise = video.play();
+      if (playPromise) {
+        playPromise.catch(() => {});
+      }
+    };
+
+    playVideo();
+    video.addEventListener('canplay', playVideo);
+    video.addEventListener('loadeddata', playVideo);
+    window.addEventListener('pageshow', playVideo);
+    document.addEventListener('visibilitychange', playVideo);
+
+    return () => {
+      video.removeEventListener('canplay', playVideo);
+      video.removeEventListener('loadeddata', playVideo);
+      window.removeEventListener('pageshow', playVideo);
+      document.removeEventListener('visibilitychange', playVideo);
+    };
+  }, []);
+
   const handleLangButtonClick = () => {
     setShowLangMenu((prev) => !prev);
   };
@@ -107,9 +142,11 @@ export default function Home() {
 
       <div className={styles.container}>
         <video
+          ref={backgroundVideoRef}
           className={styles.backgroundVideo}
           autoPlay
           muted
+          defaultMuted
           loop
           playsInline
           preload="auto"
